@@ -1,0 +1,24 @@
+.container {
+    height: 100vh;
+    padding-top: 1px;
+    background: url("/images/backhome.jpg") no-repeat center center fixed;
+    background-position: top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.title {
+    font-family: 'BrittanySignature';
+    font-size: 130px;
+    font-weight: 100;
+    color: white;
+    margin: 16rem 0 0 7rem;
+}
+
+.nous {
+    height: 100vh;
+    padding-top: 1px;
+    background: #F4F4F4;
+}

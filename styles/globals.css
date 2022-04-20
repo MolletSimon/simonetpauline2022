@@ -2,13 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Cormorant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 * {
@@ -16,17 +11,24 @@ a {
 }
 
 @font-face {
-  font-family: "EBGaramond";
-  src: url("/fonts/EBGaramond/EBGaramond-Regular.ttf");
+  font-family: "BrittanySignature";
+  src: url("/fonts/brittany_signature/BrittanySignature.ttf");
   font-style: normal;
-  font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "EBGaramond";
-  src: url("/fonts/EBGaramond/EBGaramond-Medium.ttf");
+  font-family: "Cormorant";
+  src: url("/fonts/Cormorant_Garamond/CormorantGaramond-Medium.ttf");
   font-style: medium;
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("/fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf");
+  font-style: bold;
   font-weight: 500;
   font-display: swap;
 }
