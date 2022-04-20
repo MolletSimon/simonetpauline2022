@@ -1,10 +1,14 @@
 import styles from "./nous.module.css";
+import ReactPlayer from "react-player/youtube";
 
 export function Nous() {
   return (
     <div className={styles.nous}>
       <div className={styles.video}>
-        <h1>Vidéo</h1>
+        <ReactPlayer
+          url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+          light={true}
+        />
       </div>
       <div className={styles.card}>
         <p className={styles.text}>
