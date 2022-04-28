@@ -1,6 +1,6 @@
 import styles from "./navbar.module.css";
 
-export function Navbar({ scrollToView }) {
+export default function Navbar({ scrollToView }) {
   return (
     <div className={`${styles.navbar} ${styles.borderXwidth}`}>
       <a onClick={() => scrollToView("nous")}>NOUS</a>

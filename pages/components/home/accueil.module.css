@@ -22,3 +22,20 @@
     padding-top: 1px;
     background: #F4F4F4;
 }
+
+.mariage {
+        height: 100vh;
+        padding-top: 1px;
+        background: #FFFFFF;
+}
+
+.infos {
+    height: 100vh;
+    padding-top: 1px;
+    background: url("/images/backnous.jpg") no-repeat center center fixed;
+    background-position: top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

@@ -1,9 +1,11 @@
 import styles from "./accueil.module.css";
-import { Navbar } from "../navbar/navbar.jsx";
+import Navbar from "../navbar/navbar.jsx";
 import React from "react";
-import { Nous } from "../nous/nous";
+import Nous from "../nous/nous";
+import Mariage from "../mariage/mariage";
+import Coordonnees from "../coordonnees/coordonnees";
 
-export function Accueil() {
+export default function Accueil() {
   let nousRef = React.useRef(null);
   let mariageRef = React.useRef(null);
   let infosRef = React.useRef(null);
@@ -30,11 +32,11 @@ export function Accueil() {
       <div ref={nousRef} className={styles.nous}>
         <Nous></Nous>
       </div>
-      <div ref={mariageRef} className={styles.nous}>
-        <h1>mariage</h1>
+      <div ref={mariageRef} className={styles.mariage}>
+        <Mariage></Mariage>
       </div>
-      <div ref={infosRef} className={styles.nous}>
-        <h1>infos</h1>
+      <div ref={infosRef} className={styles.infos}>
+        <Coordonnees></Coordonnees>
       </div>
     </>
   );
