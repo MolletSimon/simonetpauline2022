@@ -1,4 +1,3 @@
-import styles from "./nous.module.css";
 import ReactPlayer from "react-player/youtube";
 import Typed from "typed.js";
 import React from "react";
@@ -26,15 +25,18 @@ export default function Nous() {
   }, []);
 
   return (
-    <div className={styles.nous}>
-      <div className={styles.video}>
+    <div className="flex items-center min-h-screen">
+      <div className="h-[20rem] w-[30rem] ml-60 z-50">
         <ReactPlayer
           url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
           light={true}
         />
       </div>
-      <div className={styles.card}>
-        <p className={styles.text} ref={textRef}></p>
+      <div className="h-[40rem] w-[50rem] bg-white flex justify-end items-center">
+        <p
+          className="text-2xl text-right text-[#7E0000] font-thin ml-80 mr-16"
+          ref={textRef}
+        ></p>
       </div>
     </div>
   );

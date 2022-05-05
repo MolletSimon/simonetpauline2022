@@ -1,4 +1,3 @@
-import styles from "./accueil.module.css";
 import Navbar from "../navbar/navbar.jsx";
 import React from "react";
 import Nous from "../nous/nous";
@@ -25,17 +24,22 @@ export default function Accueil() {
   };
   return (
     <>
-      <div className={styles.container}>
+      <div className="min-h-screen bg-backhome bg-no-repeat bg-top bg-fixed bg-cover">
         <Navbar scrollToView={scrollToView}></Navbar>
-        <h1 className={styles.title}>Pauline et Simon</h1>
+        <h1 className="font-brittany text-white text-9xl font-thin mt-64 ml-28">
+          Pauline et Simon
+        </h1>
       </div>
-      <div ref={nousRef} className={styles.nous}>
+      <div ref={nousRef} className="min-h-screen bg-[#F4F4F4]">
         <Nous></Nous>
       </div>
-      <div ref={mariageRef} className={styles.mariage}>
+      <div ref={mariageRef} className="min-h-screen bg-white">
         <Mariage></Mariage>
       </div>
-      <div ref={infosRef} className={styles.infos}>
+      <div
+        ref={infosRef}
+        className="min-h-screen bg-backnous bg-no-repeat bg-top bg-fixed bg-cover pt-1"
+      >
         <Coordonnees></Coordonnees>
       </div>
     </>
