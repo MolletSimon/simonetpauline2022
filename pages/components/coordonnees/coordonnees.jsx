@@ -1,12 +1,6 @@
 import react from "react";
-import AOS from "aos";
 
 export default function Coordonnees() {
-  react.useEffect(() => {
-    AOS.init({
-      // duration : 5000
-    });
-  }, []);
   return (
     <>
       <h1 className="text-8xl text-center text-white font-brittany pt-20">
