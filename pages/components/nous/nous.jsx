@@ -18,26 +18,28 @@ export default function Nous() {
     typed.current = new Typed(textRef.current, options);
 
     return () => {
-      // Make sure to destroy Typed instance during cleanup
-      // to prevent memory leaks
       typed.current.destroy();
     };
   }, []);
 
   return (
-    <div className="flex items-center min-h-screen">
-      <div className="h-[20rem] w-[30rem] ml-60 z-50">
-        <ReactPlayer
-          url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
-          light={true}
-        />
+    <>
+      <div className="flex md:items-center xl:flex-row md:flex-col-reverse min-h-screen ">
+        <div className="xl:h-[20rem] xl:w-[40rem] 2xl:left-40 xl:z-50 bg-black xl:absolute xl:left-10">
+          <video controls poster="/images/laugh.jpg">
+            <source src="/videos/videoplayback.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div
+          className="xl:h-[40rem] xl:w-[50rem] xl:m-0 md:m-40 m-20 xl:bg-white xl:flex xl:justify-end 
+        xl:items-center xl:z-40 xl:absolute 2xl:right-40 xl:right-10"
+        >
+          <p
+            className="text-2xl xl:text-right text-center text-[#7E0000] font-thin xl:ml-80 xl:mr-16"
+            ref={textRef}
+          ></p>
+        </div>
       </div>
-      <div className="h-[40rem] w-[50rem] bg-white flex justify-end items-center">
-        <p
-          className="text-2xl text-right text-[#7E0000] font-thin ml-80 mr-16"
-          ref={textRef}
-        ></p>
-      </div>
-    </div>
+    </>
   );
 }

@@ -15,6 +15,7 @@ module.exports = {
       backgroundImage: {
         backhome: "url('/images/backhome.jpg')",
         backnous: "url('/images/backnous.jpg')",
+        backphone: "url('/images/backphone.png')",
       },
     },
   },

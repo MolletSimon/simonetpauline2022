@@ -24,9 +24,16 @@ export default function Accueil() {
   };
   return (
     <>
-      <div className="min-h-screen bg-backhome bg-no-repeat bg-top bg-fixed bg-cover">
+      <div
+        className="min-h-screen bg-backphone bg-no-repeat bg-center md:bg-top bg-fixed bg-cover
+      md:bg-backhome"
+      >
         <Navbar scrollToView={scrollToView}></Navbar>
-        <h1 className="font-brittany text-white text-9xl font-thin mt-64 ml-28">
+
+        <h1
+          className="font-brittany mt-20 text-white text-7xl ml-8 font-thin
+        md:text-9xl md:mt-64 md:ml-28"
+        >
           Pauline et Simon
         </h1>
       </div>
