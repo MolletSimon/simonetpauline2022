@@ -7,6 +7,7 @@ export default function Navbar({ scrollToView }) {
     >
       <a onClick={() => scrollToView("nous")}>NOUS</a>
       <a onClick={() => scrollToView("mariage")}>LE MARIAGE</a>
+      <a onClick={() => scrollToView("liste")}>LISTE DE MARIAGE</a>
       <a onClick={() => scrollToView("infos")}>NOUS CONTACTER</a>
     </div>
   );
